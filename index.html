@@ -1,32 +1,55 @@
+
 <!DOCTYPE html>
+<html lang="en">
 
-</div>
+    <head>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
 
-	<head>
-		<title>Emily Yaklich</title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-		<img src="http://www.tizag.com/pics/htmlT/sunset.gif" />
-	</head>
-	<body>
-		
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Emily Yaklich!</h1>
-				<p>I am a student.</a></p>
-				
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        	<div class="blurb">	
-			<p> Email: emily.yaklich@gmail.com
-			
-				
-		
-			</ul>
-		</footer>
-	</body>
+
+    <body>
+           <button class="tablink" onclick="openPage('About Me', this, 'grey')" id="defaultOpen">About Me</button>
+            <button class="tablink" onclick="openPage('Projects', this, 'grey')">Projects</button>
+            <button class="tablink" onclick="openPage('Contact', this, 'grey')">Contact</button>
+
+            <div id="About Me" class="tabcontent">
+                <img src="https://i.ibb.co/3S9Vdhs/Yaklich-Emily.jpg" alt="Yaklich-Emily" border="0"></a>
+                <h1>Hi, I am Emily Yaklich!</h1>
+                <p>I am a student who is very interested in computational biology, specifically,
+                    as it applies to the plant sciences. I have a B.S. in Genetics and I am currently
+                    working full-time researching using computational biology techniques.
+                    I have experience in both experimental and computational biology.
+                </p>
+            </div>
+
+
+            <div id="Projects" class="tabcontent">
+              <h1>Projects</h1>
+                 <h3> Machine learning model to predict transmembrane identity based on sequence features</h3>
+
+                    <p>Model that will be able to classify a protein sequence as transmembrane or not is able to
+                        predict with ~93% accuracy. The purpose of creating this model was to build a foundation and
+                        familiarize myself with machine learning protocols and now I can compare this model to already
+                        existing transmembrane prediction algorithms and then further improve this model to possibly
+                        classify specific TM helix regions and/or membrane protein interfaces. This project was completed
+                        as part of a machine learning graduate course. </p>
+                <p> GitHub Repo located <a href="https://github.com/emilyyaklich/final-project">here</a>.</p>
+                <h3> Wikipedia Page on C19orf44 (a protein of unknown function)</h3>
+                  <p>
+                      Chromosome 19 open reading frame 44 (C19orf44) is a protein of unknown function. As part of
+                      an undergraduate computational biology course, I performed a web-based analysis of this
+                      protein in order to gather information on the C19orf44 gene, protein, expression
+                      locations and levels, homology and evolution, and protein-protein interactions.
+                            </p>
+                <p> Wikipedia page located <a href="https://en.wikipedia.org/wiki/C19orf44">here</a>.</p>
+
+            </div>
+
+            <div id="Contact" class="tabcontent">
+              <h1>Contact</h1>
+                <h3>Feel free to reach out if you would like to chat or to see my full Curriculum Vitae.
+                    The best way to reach me is via email at emily.yaklich@gmail.com.</h3>
+            </div>
+    <script src="my_script.js"></script>
+    </body>
 </html>
-
-
