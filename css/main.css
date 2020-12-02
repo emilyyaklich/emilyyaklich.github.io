@@ -3,8 +3,7 @@ body, html {
   height: 100%;
   margin: 0;
   font-family: Arial;
-    cursor: url("https://icons.iconarchive.com/icons/icons-land/medical/32/Body-DNA-icon.png")
-      4 12, auto;
+    cursor: url("https://icons.iconarchive.com/icons/icons-land/medical/32/Body-DNA-icon.png"), auto;
 }
 
 /* Style tab links */
