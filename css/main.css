@@ -62,3 +62,9 @@ h1 {
 	position:relative;
 	top:1px;
 }
+
+.ImageBorder
+{
+    border-width: 4px;
+    border-color: midnightblue;
+}
