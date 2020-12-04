@@ -50,7 +50,7 @@ h1 {
 	font-weight:bold;
 	padding:4px 9px;
 	text-decoration:none;
-	text-shadow:0px 1px 0px #7cacde;
+	text-shadow:0px 1px 0px darkgrey;
 }
 .myButton:hover {
 	background-color:darkgrey;
