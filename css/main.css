@@ -1,10 +1,12 @@
 /* Set height of body and the document to 100% to enable "full page tabs" */
 body, html {
+  background-repeat: repeat-y;
+  width: 100%;
   height: 100%;
   margin: 0;
   font-family: Arial;
   background-color: lightsteelblue;
-    cursor: url("https://icons.iconarchive.com/icons/icons-land/medical/32/Body-DNA-icon.png"), auto;
+  cursor: url("https://icons.iconarchive.com/icons/icons-land/medical/32/Body-DNA-icon.png"), auto;
 }
 h1 {
   text-shadow: 2px 2px grey;
