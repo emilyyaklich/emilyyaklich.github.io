@@ -6,13 +6,32 @@
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+        <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="~https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
+        <!-- Bootstrap CSS local fallback -->
+        <script>
+            var test = document.createElement("div")
+            test.className = "hidden d-none"
+
+            document.head.appendChild(test)
+            var cssLoaded = window.getComputedStyle(test).display === "none"
+            document.head.removeChild(test)
+
+            if (!cssLoaded) {
+                var link = document.createElement("link");
+
+                link.type = "text/css";
+                link.rel = "stylesheet";
+                link.href = "bootstrap-4.0.0-dist/css/bootstrap.min.css";
+
+                document.head.appendChild(link);
+            }
+        </script>
         <link rel="stylesheet" type="text/css" href="css/main.css">
     </head>
 
     <body>
-           <button class="tablink" onclick="openPage('About Me', this, 'grey')" id="defaultOpen">About Me</button>
+            <button class="tablink" onclick="openPage('About Me', this, 'grey')" id="defaultOpen">About Me</button>
             <button class="tablink" onclick="openPage('Projects', this, 'grey')">Projects</button>
             <button class="tablink" onclick="openPage('Contact', this, 'grey')">Contact</button>
 
@@ -74,9 +93,18 @@
                 <h3>Feel free to reach out if you would like to chat or to see my full curriculum vitae.
                     The best way to reach me is via email at emily.yaklich@gmail.com.</h3>
             </div>
+
+
     <script src="my_script.js"></script>
-    <script src="jquery-3.3.1.min.js"></script>
-    <script src="/bootstrap-4.0.0-dist/js/bootstrap/js/bootstrap.min.js"></script>
+     <!-- jQuery CDN -->
+    <script src="~https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!-- jQuery local fallback -->
+    <script>window.jQuery || document.write('<script src="jquery-3.3.1.min.js"><\/script>')</script>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="~https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Bootstrap JS local fallback -->
+    <script>if(typeof($.fn.modal) === 'undefined') {document.write('<script src="/bootstrap-4.0.0-dist/js/bootstrap/js/bootstrap.min.js"><\/script>')}</script>
 
     </body>
 </html>
