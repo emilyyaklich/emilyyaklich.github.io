@@ -65,6 +65,6 @@ h1 {
 
 .ImageBorder
 {
-    border-width: 4px;
-    border-color: midnightblue;
+  border: 3px solid midnightblue;
+    padding: 0;
 }
