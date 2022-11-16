@@ -21,7 +21,7 @@ h1 {
   cursor: pointer;
   padding: 14px 16px;
   font-size: 17px;
-  width: 33.33%;
+  width: 25%;
 }
 
 .tablink:hover {
@@ -38,6 +38,7 @@ h1 {
 
 #About\ Me {background-color: lightsteelblue;}
 #Projects {background-color: lightsteelblue;}
+#Publications {background-color: lightsteelblue;}
 #Contact {background-color: lightsteelblue;}
 
 .myButton {
