@@ -40,31 +40,36 @@
             <button class="tablink" onclick="openPage('Contact', this, 'grey')">Contact</button>
 
             <div id="About Me" class="tabcontent">
-                <img src="images/headshot_yaklich.jpg" width="200" height="200"
+                <img src="images/headshot_yaklich.jpg" width="300" height="300"
                      alt="Yaklich-Emily" , class="ImageBorder"></a>
-                <h1><b>hello, I am Emily Yaklich!</b></h1>
+                <h1><b>Hello, I am Emily Yaklich!</b></h1>
                 <hr>
-                <p>I am a student who is very interested in computational biology and the plant sciences. I have a B.S. in Genetics,
-                    Cell Biology, and Development
-                    and I am currently
-                    a graduate student at the University of Georgia.
-                    I have experience in both experimental and computational biology.
+                <p>I am currently a second year graduate student in the Department of Plant Biology at the
+                    University of Georgia. I obtained my B.S. in Genetics, Cell Biology, and Development at
+                    the University of Minnesota and subsequently spent three years at the National Institutes
+                    of Health using structural bioinformatics to study membrane protein structures. My
+                    strong background in genetics and bioinformatics has set me up wonderfully to study
+                    sunflowers in my graduate program using genomics and transcriptomics.
                 </p>
                 <p> In my free time I enjoy running, biking, and hiking (basically anything outdoors)! </p>
+                <br style=“line-height:N;”>
             </div>
 
 
             <div id="Projects" class="tabcontent">
                 <h1><b>Projects</b></h1>
+                Below I share some examples of projects that I have worked on whether part of an academic course or in my free time.
                 <hr>
                  <h3> <b> Machine learning model to predict transmembrane protein identity based on sequence features</b></h3>
 
-                    <p>Model that will be able to classify a protein sequence as transmembrane or not is able to
-                        predict with ~93% accuracy. The purpose of creating this model was to build a foundation and
-                        familiarize myself with machine learning protocols. I can now compare this model to already
-                        existing transmembrane prediction algorithms and then further improve this model to possibly
-                        classify specific TM helix regions and/or membrane protein interfaces. This project was completed
-                        as part of a machine learning course. </p>
+                    <p>Machine learning models can be valuable tools for protein prediction, specifically, which regions
+                        of a protein are embedded in the cell membrane or not. I created a model that will be able to
+                        classify if a protein sequence is transmembrane (TM) or in the cytosol. This model can predict
+                        TM membership with ~93% accuracy. The purpose of creating this model was to build a foundation
+                        and familiarize myself with machine learning protocols. I can now compare this model to already
+                        existing TM prediction algorithms and then further improve this model to possibly classify
+                        specific TM helix regions and/or membrane protein interfaces in my own work. This project was
+                        completed as part of a machine learning course. </p>
                 <a href="https://github.com/emilyyaklich/final-project" class="myButton" class="hvr-skew">GitHub repository</a>
                 <hr>
 
@@ -87,13 +92,13 @@
 
                 <h3><b> Morris Hoeft Group Website</b></h3>
                   <p>
-                      Put together the website for Morris Hoeft Group LLC.
+                      Built the website for Morris Hoeft Group LLC.
                             </p>
                 <a href="https://morrishoeft.com/" class="myButton">Website</a>
                 <hr>
 
                 <h3> <b>This Website! </b></h3>
-                <p> I have been building this website as a hobby in my free time.</p>
+                <p> I have been building my personal website as a hobby in my free time.</p>
                 <a href="https://github.com/emilyyaklich/emilyyaklich.github.io" class="myButton">GitHub repository</a>
                 <hr>
 
@@ -106,12 +111,33 @@
                 <h5> Staritzbichler R, <b>Yaklich E</b>, Sarti E, Ristic N, Hildebrand PW, Forrest LR, <i>AlignMe: an update of
                     the web server for alignment of membrane protein sequences.</i> 2022. Nucleic Acids Research.
                     doi: 10.1093/nar/gkac391</h5>
+                The AlignMe webserver is specially designed for the accurate amino acid sequence alignment of membrane
+                proteins. Membrane proteins are notoriously difficult to align due to strong evolutionary divergence and
+                low amino acid complexity due to hydrophoibc residues within the membrane. The AlignMe server has been around for about a decade,
+                but updates to this release include multiple submissions, structural visualization, and anchoring of
+                residues. The anchoring of residues allows the user to constrain specific amino acids in the sequence
+                alignment based on biochemical, biophysical, or genetic data within the sequence alignment. Previously,
+                this information has been incorporated manually after the sequence has been adjusted. These updates to
+                the AlignMe server make it more user friendly and continues to be a useful resource for the membrane
+                protein community.
+                <br style=“line-height:N;”>
                 <a href="https://academic.oup.com/nar/article/50/W1/W29/6591521" class="myButton">Link to article</a>
 
                 <hr>
                 <h5>Staritzbichler R, Sarti E, <b>Yaklich E</b>, Aleksandrova A, Stamm M, Khafizov K, Forrest LR. <i>Refining
                     pairwise sequence alignments of membrane proteins by the incorporation of anchors.</i> 2021. PLoS ONE
                     16(4): e0239881. doi: 10.1371/journal.pone.0239881.</h5>
+                Membrane proteins are encoded by 20- 30% of genomes and have diverse functions including signaling,  scaffolding, and transporting molecules. Aligning sequences of membrane proteins can be difficult
+                due to the complex hydrophobic membrane environment and low sequence identity. AlignMe
+                (www.bioinfo.mpg.de/AlignMe/) is a program optimized for aligning membrane proteins allowing the
+                input of evolutionary, transmembrane, and secondary structure predictions. Additionally, AlignMe
+                allows for the incorporation of biochemical/biophysical data by using a restraint to match positions
+                between two sequences known as an anchor. Historically, this biochemical information is added
+                manually after the sequence alignment is complete, but the use of anchors allows non-anchored
+                residues to be aligned following the AlignMe algorithm. Incorporating biochemical data through
+                the use of anchors in AlignMe is an efficient and reproducible way of modifying alignments
+                of membrane protein sequences.
+                <br style=“line-height:N;”>
                 <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0239881" class="myButton">Link to article</a>
                 <hr>
             </div>
