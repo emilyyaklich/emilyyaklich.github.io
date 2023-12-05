@@ -69,3 +69,10 @@ h1 {
   border: 3px solid midnightblue;
     padding: 0;
 }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
